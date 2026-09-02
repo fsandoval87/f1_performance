@@ -1,0 +1,18 @@
+Actúa como un desarrollador experto en Streamlit y Python. Escribe el código para app.py que cargue el archivo data/datos.csv. La app debe incluir:
+1. Un título y un subtítulo llamativo.
+2. Un checkbox que permita al usuario decidir si desea ver las primeras 5 filas del conjunto de datos en una tabla interactiva.
+3. Filtros de estilo dropdown y checkbox para dar interactividad.
+4. Tres gráficos generados con matplotlib o seaborn colocados uno al lado del otro (st.columns):
+   - Un gráfico de barras que muestre las proporciones del número de podios por escudería .
+   - Un histograma para la distribución de los dnf (carreras no finalizadas) por escudería.
+   - Un scatterplot entre la temperatura de la pista y el tiempo de carrera mínimo.
+5. El diseño debe lucir profesional, limpio y manejar adecuadamente excepciones si el archivo CSV no existe.
+6. Usa para los gráficos seaborn
+
+Te comparto una muestra de los datos:
+id,fecha,escuderia,motor,carrera_id,circuito,pais,vueltas,tiempo_carrera_min,posicion_final,puntos,podio,dnf,vuelta_rapida,clima,temperatura_pista_c
+1,2021-03-28,Mercedes,Mercedes,1,Bahrain International Circuit,Bahrain,56,96.5,1,25,True,False,True,Seco,35.2
+2,2021-03-28,Red Bull Racing,Honda,1,Bahrain International Circuit,Bahrain,56,96.8,2,18,True,False,False,Seco,35.0
+3,2021-03-28,Ferrari,Ferrari,1,Bahrain International Circuit,Bahrain,56,98.2,4,12,False,False,False,Seco,35.1
+4,2021-03-28,McLaren,Mercedes,1,Bahrain International Circuit,Bahrain,56,97.6,3,15,True,False,False,Seco,34.9
+5,2021-03-28,Alpine,Renault,1,Bahrain International Circuit,Bahrain,55,98.5,8,4,False,False,False,Seco,34.8
